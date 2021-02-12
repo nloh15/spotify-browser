@@ -1,5 +1,7 @@
 --Readme document for *author(s)*, *email(s)*, *UCI id(s)*--
 
+Hello
+
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
 */10
