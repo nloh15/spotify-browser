@@ -1,6 +1,7 @@
 --Readme document for *author(s)*, *email(s)*, *UCI id(s)*--
-
-Hello
+Authors: Cheryll Gunawan, Nicole Loh
+Email: cagunawa@uci.edu, nloh@uci.edu
+UCI ID: 88431237
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
