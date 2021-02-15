@@ -1,13 +1,13 @@
 --Readme document for *author(s)*, *email(s)*, *UCI id(s)*--
 Authors: Cheryll Gunawan, Nicole Loh
-Email: cagunawa@uci.edu, nloh@uci.edu
-UCI ID: 88431237
+Email: cagunawa@uci.edu, lohn@uci.edu
+UCI ID: 88431237, 90228913
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
 */10
-- */1 Communicating with the webserver
-- */1 Populating information about the user
+- 1/1 Communicating with the webserver
+- 1/1 Populating information about the user
 - */3 Populating the search component
 - */2 Artist page
 - */1.5 Album page
@@ -20,6 +20,7 @@ UCI ID: 88431237
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
 
+https://stackoverflow.com/questions/35945001/binding-select-element-to-object-in-angular - Dropdown options binding
 
 
 4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
