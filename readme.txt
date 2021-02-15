@@ -21,6 +21,7 @@ UCI ID: 88431237, 90228913
 3. What online resources did you consult when completing this assignment? (list specific URLs)
 
 https://stackoverflow.com/questions/35945001/binding-select-element-to-object-in-angular - Dropdown options binding
+https://ultimatecourses.com/blog/angular-ngif-else-then - Angular if else statements
 
 
 4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
