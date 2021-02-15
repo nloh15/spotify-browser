@@ -9,3 +9,6 @@
 	<app-carousel [carouselId]="searchCategory" [resources]="resources"></app-carousel>
 </div>
 <!--TODO: Display a track-list component if searching for a track. Bind track-list's tracks.-->
+<div *ngIf="searchCategory == 'track'">
+	<app-track-list [tracks]="resources"></app-track-list>
+</div>
