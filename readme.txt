@@ -22,6 +22,7 @@ UCI ID: 88431237, 90228913
 
 https://stackoverflow.com/questions/35945001/binding-select-element-to-object-in-angular - Dropdown options binding
 https://ultimatecourses.com/blog/angular-ngif-else-then - Angular if else statements
+https://stackoverflow.com/questions/35405618/ngfor-with-index-as-value-in-attribute - Index values
 
 
 4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
