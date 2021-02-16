@@ -1,40 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { ArtistData } from '../../data/artist-data';
-import { TrackData } from '../../data/track-data';
-import { AlbumData } from '../../data/album-data';
-import { SpotifyService } from '../../services/spotify.service';
-
-@Component({
-  selector: 'app-album-page',
-  templateUrl: './album-page.component.html',
-  styleUrls: ['./album-page.component.css']
-})
-export class AlbumPageComponent implements OnInit {
-	albumId:string;
-	album:AlbumData;
-  tracks:TrackData[];
-  
-  artist:ArtistData[];
-
-  constructor(private route: ActivatedRoute, private spotify: SpotifyService) { }
-
-  ngOnInit() {
-  	this.albumId = this.route.snapshot.paramMap.get('id');
-  	//TODO: inject spotifyService and use it to get the album data and the tracks for the album
-    this.spotify.getAlbum(this.albumId).then((data)=>{
-      console.log(data);
-      console.log(data.artists);
-      
-      this.album = data;
-      this.artist = data.artists;
-      console.log(this.artist);
-      
-    });
-
-    this.spotify.getTracksForAlbum(this.albumId).then((data)=>{
-      this.tracks = data;
-    });
-  }
-
-}
+<div *ngIf="album" class="row">
+	<div class="col-6">
+		<!--TODO: populate with album name-->
+		<h1>{{album.name}}</h1>
+		<!--TODO: set src to album image URL-->
+		<img id="albumImg" [src] = "album.imageURL">
+		<!--TODO: loop over album artists-->
+		<p>
+			<!--TODO: link to artist page, display artist name-->
+			Artist: <a>{{artist[0].name}}</a>
+		</p>
+		<p>
+			<!--TODO: link to artist page on spotify, display artist name-->
+			<a class="btn btn-light" [href]="artist[0].url" role="button" target="_blank" >Open {{artist[0].name}} on Spotify</a>
+		</p>
+	</div>
+	<div class="col-6">
+		<h3>Album Tracks</h3>
+		<!--TODO: display the track list for the album. Hide the artist and album columns because they are redundant on this page.-->
+		<app-track-list [tracks]="tracks" [hideAlbum]="true" [hideArtist]="true" ></app-track-list>
+	</div>
+</div>
