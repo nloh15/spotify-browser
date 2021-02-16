@@ -29,9 +29,15 @@ export class ArtistPageComponent implements OnInit {
       this.artist = data;
     });
 
+    // Get related artists
     this.spotifyService.getRelatedArtists(this.artistId).then((data)=>{
       console.log(data);
       this.relatedArtists = data;
+    });
+
+    // Get album
+    this.spotifyService.getAlbumsForArtist(this.artistId).then((data)=>{
+      this.albums = data;
     });
   }
 
