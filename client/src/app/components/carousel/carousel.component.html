@@ -1,7 +1,7 @@
 <div *ngIf="resources" id="{{carouselId}}" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false" data-interval="3000">
   <div class="carousel-inner">
     <!-- Populate carousel with carousel-card components -->
-    <app-carousel-card *ngFor="let first=first; let r of resources" class="carousel-item" [ngClass]="{'active': first}" [resource]="r"  ></app-carousel-card>
+    <app-carousel-card *ngFor="let first=first; let r of resources" class="carousel-item" [ngClass]="{'active': first}" [resource]="r"></app-carousel-card>
   </div>
   <a class="carousel-control-prev" href="#{{carouselId}}" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -31,13 +31,17 @@ export class ArtistPageComponent implements OnInit {
 
     // Get related artists
     this.spotifyService.getRelatedArtists(this.artistId).then((data)=>{
-      console.log(data);
       this.relatedArtists = data;
     });
 
     // Get album
     this.spotifyService.getAlbumsForArtist(this.artistId).then((data)=>{
       this.albums = data;
+    });
+
+    // Get album
+    this.spotifyService.getTopTracksForArtist(this.artistId).then((data)=>{
+      this.topTracks = data;
     });
   }
 
