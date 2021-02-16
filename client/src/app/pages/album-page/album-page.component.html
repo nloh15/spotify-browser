@@ -5,17 +5,17 @@
     <!-- Set src to album image URL-->
     <img id="albumImg" [src]="album.imageURL">
     <!--TODO: loop over album artists-->
-    <p>
-      <!--TODO: link to album page, display album name-->
-      Album: <a>{{ album.name }}</a>
+    <p *ngFor="let a of artist">
+      <!--TODO: link to artist page, display artist name-->
+      Artist: <a href="/artist/{{a.id}}"> {{ a.name }}</a>
     </p>
     <p>
-      <!--TODO: link to artist page on spotify, display artist name-->
+      <!--TODO: link to album page on spotify, display artist name-->
       <a class="btn btn-light" role="button" target="_blank" [href]="album.url">Open {{ album.name }} on Spotify</a>
     </p>
   </div>
   <div class="col-6">
     <h3>Album Tracks</h3>
-    <app-track-list [tracks]="tracks" [hideAlbum]="true" [hideArtist]="true"></app-track-list>
     <!--TODO: display the track list for the album. Hide the artist and album columns because they are redundant on this page.-->
+    <app-track-list [tracks]="tracks" [hideAlbum]="true" [hideArtist]="true"></app-track-list>
   </div>
