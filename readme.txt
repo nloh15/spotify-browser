@@ -10,7 +10,7 @@ UCI ID: 88431237, 90228913
 - 1/1 Populating information about the user
 - 3/3 Populating the search component
 - 2/2 Artist page
-- */1.5 Album page
+- 1.5/1.5 Album page
 - */1.5 Track page
 
 
