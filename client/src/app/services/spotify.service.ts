@@ -133,9 +133,10 @@ export class SpotifyService {
 
     return this.sendRequestToExpress(searchEndpoint).then((data) => {
 
+    console.log(data.tracks.items);
       let track = [];
-      for (var a in data.items){
-        track.push(new TrackData(data.items[a]));
+      for (var a in data.tracks.items){
+        track.push(new TrackData(data.tracks.items[a]));
       }
       return track;
     });
