@@ -117,19 +117,38 @@ export class SpotifyService {
     });
   }
 
+  g
   getAlbum(albumId:string):Promise<AlbumData> {
     //TODO: use the album endpoint to make a request to express.
-    return null;
+    var encodedAlbumId = encodeURIComponent(albumId);
+    var searchEndpoint = '/album/' + encodedAlbumId;
+    return this.sendRequestToExpress(searchEndpoint).then((data) => {
+      return new AlbumData(data);
+    });
   }
 
   getTracksForAlbum(albumId:string):Promise<TrackData[]> {
     //TODO: use the tracks for album endpoint to make a request to express.
-    return null;
+    var encodedAlbumId = encodeURIComponent(albumId);
+    var searchEndpoint = '/album/' + encodedAlbumId;
+
+    return this.sendRequestToExpress(searchEndpoint).then((data) => {
+
+      let track = [];
+      for (var a in data.items){
+        track.push(new TrackData(data.items[a]));
+      }
+      return track;
+    });
   }
 
   getTrack(trackId:string):Promise<TrackData> {
     //TODO: use the track endpoint to make a request to express.
-    return null;
+    var encodedTrackId = encodeURIComponent(trackId);
+    var searchEndpoint = '/track/' + encodedTrackId;
+    return this.sendRequestToExpress(searchEndpoint).then((data) => {
+      return new TrackData(data);
+    });
   }
 
   getAudioFeaturesForTrack(trackId:string):Promise<TrackFeature[]> {
