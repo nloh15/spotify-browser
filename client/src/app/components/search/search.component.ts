@@ -23,7 +23,9 @@ export class SearchComponent implements OnInit {
   }
 
   search() {
+    // Clear resources upon clicked
     this.resources = null;
+    // Updated resources with data requested
     this.spotifyService.searchFor(this.searchCategory, this.searchString).then(data => {
       this.resources = data;
     });
