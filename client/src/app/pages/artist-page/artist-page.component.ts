@@ -18,7 +18,7 @@ export class ArtistPageComponent implements OnInit {
 	topTracks:TrackData[];
 	albums:AlbumData[];
 
-  constructor(private route: ActivatedRoute, private spotifyService:SpotifyService ) { }
+  constructor(private route: ActivatedRoute, private spotifyService:SpotifyService) { }
 
   ngOnInit() {
   	this.artistId = this.route.snapshot.paramMap.get('id');
@@ -27,7 +27,11 @@ export class ArtistPageComponent implements OnInit {
     // Get artist data
     this.spotifyService.getArtist(this.artistId).then((data)=>{
       this.artist = data;
-      console.log(this.artist);
+    });
+
+    this.spotifyService.getRelatedArtists(this.artistId).then((data)=>{
+      console.log(data);
+      this.relatedArtists = data;
     });
   }
 
