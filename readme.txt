@@ -11,11 +11,11 @@ UCI ID: 88431237, 90228913
 - 3/3 Populating the search component
 - 2/2 Artist page
 - 1.5/1.5 Album page
-- */1.5 Track page
+- 1.5/1.5 Track page
 
 
 2. How long, in hours, did it take you to complete this assignment?
-
+20 hours
 
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
@@ -35,4 +35,3 @@ https://uci-inf-133-wi21.slack.com/archives/C01LKEAMFMZ/p1613161638065000 - Caro
 
 
 6. Is there anything special we need to know in order to run your code?
-
