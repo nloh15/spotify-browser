@@ -4,7 +4,7 @@
 		<h1> {{ track.name }} </h1>
 		<p>
 			<!-- Link to album page, display album name-->
-			Track on <a> {{ track.album.name }} </a>
+			Track on <a href="/album/{{track.album.id}}"> {{ track.album.name }} </a>
 		</p>
 		<div>
 			<!-- Loop over album's artists-->
