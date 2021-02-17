@@ -43,3 +43,6 @@ Thumbs.db
 
 webserver/tokens.json
 webserver/client_secret.json
+
+.env
+/node_modules
