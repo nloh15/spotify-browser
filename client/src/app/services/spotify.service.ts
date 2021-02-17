@@ -166,6 +166,7 @@ export class SpotifyService {
       }
       console.log(dataMapping);
       return dataMapping;
+      
     });
   }
 }
