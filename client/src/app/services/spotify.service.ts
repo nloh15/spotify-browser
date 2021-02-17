@@ -157,7 +157,15 @@ export class SpotifyService {
     var encodedTrackId = encodeURIComponent(trackId);
     var searchEndpoint = '/track-audio-features/' + encodedTrackId;
     return this.sendRequestToExpress(searchEndpoint).then((data) => {
-      return new TrackFeature(data);
+      var dataMapping = []
+      for (var d in data){
+        // Check if feature type is what we need
+        if (TrackFeature.FeatureTypes.includes(d)){
+          dataMapping.push(new TrackFeature(d, data[d]));
+        }
+      }
+      console.log(dataMapping);
+      return dataMapping;
     });
   }
 }

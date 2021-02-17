@@ -8,10 +8,7 @@ import { TrackFeature } from '../../data/track-feature';
 })
 export class ThermometerComponent implements OnInit {
   //TODO: define Input fields and bind them to the template.
-  @Input() name:string;
-  @Input() color:string;
-  @Input() percent:string;
-  @Input() percentageStr:string;
+  @Input() feature:TrackFeature;
 
   constructor() { }
 
