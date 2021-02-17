@@ -12,15 +12,13 @@ export class AboutComponent implements OnInit {
   profile_pic:string = "../../../assets/unknown.jpg";
   profile_link:string = null;
 
-  constructor(private spotify: SpotifyService) {}
+  constructor(private spotifyService:SpotifyService) {}
 
   ngOnInit() {
-        //this.name = profileData.name; 
-
   }
 
   aboutMe():void{
-    this.spotify.aboutMe().then((data)=>{
+    this.spotifyService.aboutMe().then((data)=>{
       this.name = data.name;
       this.profile_pic = data.imageURL;
       this.profile_link = data.spotifyProfile;
