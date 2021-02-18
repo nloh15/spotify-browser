@@ -5,7 +5,7 @@ UCI ID: 88431237, 90228913
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
-*/10
+10/10
 - 1/1 Communicating with the webserver
 - 1/1 Populating information about the user
 - 3/3 Populating the search component

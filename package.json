@@ -1,0 +1,26 @@
+{
+  "name": "a3-spotify-browser-in-angular-nicole",
+  "version": "1.0.0",
+  "description": "--Readme document for *author(s)*, *email(s)*, *UCI id(s)*-- Authors: Cheryll Gunawan, Nicole Loh Email: cagunawa@uci.edu, lohn@uci.edu UCI ID: 88431237, 90228913",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uci-inf-133/a3-spotify-browser-in-angular-nicole.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uci-inf-133/a3-spotify-browser-in-angular-nicole/issues"
+  },
+  "homepage": "https://github.com/uci-inf-133/a3-spotify-browser-in-angular-nicole#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "14.15.4"
+  }
+}
