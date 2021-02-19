@@ -5,7 +5,7 @@ UCI ID: 88431237, 90228913
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
-*/10
+10/10
 - 1/1 Communicating with the webserver
 - 1/1 Populating information about the user
 - 3/3 Populating the search component
@@ -24,11 +24,16 @@ https://stackoverflow.com/questions/35945001/binding-select-element-to-object-in
 https://ultimatecourses.com/blog/angular-ngif-else-then - Angular if else statements
 https://stackoverflow.com/questions/35405618/ngfor-with-index-as-value-in-attribute - Index values
 https://uci-inf-133-wi21.slack.com/archives/C01LKEAMFMZ/p1613161638065000 - Carousel issues
+https://angular.io/guide/dependency-injection
+https://blog.angular-university.io/angular-2-ngfor/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals - Template Liberals
+https://www.geeksforgeeks.org/creating-progress-bar-using-javascript/ - Progress Bars
+https://medium.com/@amorenogo/spotify-app-with-angular-ac2a92fb8bff
 
 
 4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 
-
+-
 
 5. Did you add a bonus feature to your submission? If so, what is it and how should we see it?
 
