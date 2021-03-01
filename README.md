@@ -1,7 +1,7 @@
 Spotify Browser in Angular
 ====================
 
-Simple Spotify browser implementation in Angular.
+Spotify browser implementation in Angular.
 
 Installing dependencies
 -------
@@ -11,8 +11,8 @@ Running the webserver
 -------
 1. Login to [Spotify Developers](https://developer.spotify.com/dashboard/) and create an application.
 2. Set the redirect URI to [http://localhost:8888/callback](http://localhost:8888/callback).
-3. `cd webserver`
-4. Create a file called `client_secret.json` which contains:
+3. `cd` into the webserver folder
+4. Create a file called `client_secret.json` and set the client key and client secret in the following format:
 ```sh
 {
  "client_id": "Your Client Key",
@@ -26,7 +26,7 @@ Running the webserver
  "refresh_token": null
 } 
 ```
-6. `npm start`
+6. Run `npm start`
 
 Running the client
 -------
