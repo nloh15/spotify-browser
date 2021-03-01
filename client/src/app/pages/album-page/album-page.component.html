@@ -1,9 +1,9 @@
-<div *ngIf="album" class="row">
-  <div class="col-6">
+<div *ngIf="album" class="row full-box-container">
+  <div class="col-5">
     <!-- Populate with album name-->
     <h1> {{ album.name }} </h1>
     <!-- Set src to album image URL-->
-    <img id="albumImg" [src]="album.imageURL">
+    <img id="albumImg" [src]="album.imageURL" width="400" height="400">
     <!-- Loop over album artists-->
     <p *ngFor="let a of artist">
       <!-- Link to artist page, display artist name-->
@@ -11,10 +11,10 @@
     </p>
     <p>
       <!-- Link to album page on spotify, display album name-->
-      <a class="btn btn-light" role="button" target="_blank" [href]="album.url">Open {{ album.name }} on Spotify</a>
+      <a class="btn btn-light btn-grad" role="button" target="_blank" [href]="album.url">Open {{ album.name }} on Spotify</a>
     </p>
   </div>
-  <div class="col-6">
+  <div class="col-5">
     <h3>Album Tracks</h3>
     <!-- Display the track list for the album. Hide the artist and album columns because they are redundant on this page.-->
     <app-track-list [tracks]="tracks" [hideAlbum]="true" [hideArtist]="true"></app-track-list>

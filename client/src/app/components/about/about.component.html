@@ -1,10 +1,10 @@
 <!-- Click callback to load about me information -->
-<button class="btn btn-light" (click) = "aboutMe()">Load info about me</button>
+<button class="btn btn-light btn-grad" (click) = "aboutMe()">Load info about me</button>
 <!-- Bind to name -->
-<h3>Logged in user: {{ name }}</h3>
+<h2>Welcome, {{ name }}!</h2>
 <!-- Bind to profile picture -->
-<img [src] = "profile_pic">
+<img [src] = "profile_pic" width="400" height="400">
 <p>
 	<!-- Bind to profile link -->
-	<a class="btn btn-light" [href] = "profile_link" target="_blank">Open profile on Spotify</a>	
+	<a class="btn btn-light btn-grad" [href] = "profile_link" target="_blank">Open profile on Spotify</a>	
 </p>

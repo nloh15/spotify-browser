@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-	background-color: var(--dark);
-	color: var(--light);
+	background: rgb(249,240,234);
+background: radial-gradient(circle, rgba(249,240,234,1) 45%, rgba(248,245,248,1) 100%);
+color: #281a3d;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -15,9 +16,66 @@ h2, h3 {
 }
 
 button, .btn {
-	margin: 10px;
+	margin: 10px 0px;
 }
 
 a {
 	color: var(--orange);
+}
+
+.navbar-custom {
+  box-shadow: 0px 1px 4px #d6d6d6;
+  background: rgb(249,240,234);
+background: radial-gradient(circle, rgba(249,240,234,1) 45%, rgba(248,245,248,1) 100%);
+}
+
+.row-centered {
+	text-align:center;
+}
+
+.box-container {
+	border-radius: 20px;
+	background-color: white;
+	padding: 30px;
+	box-shadow: 0px 1px 4px #d6d6d6;
+}
+
+.full-box-container{
+	border-radius: 20px;
+	background-color: white;
+	padding: 30px;
+	box-shadow: 0px 1px 4px #d6d6d6;
+	margin: 25px;
+}
+
+.i-am-centered { 
+	margin: auto;
+	text-align: center;
+}
+
+
+div {
+  column-gap: 40px;
+}
+
+[class*="col-"] {
+  padding: 2rem;
+}
+
+.btn-grad {
+	background-color: #635ca3;
+	text-align: center;
+	transition: 0.5s;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+
+.btn-search {
+	margin-left: 10px;
+}
+
+.btn-grad:hover {
+	background-color: #281a3d;
+	color: white;
 }

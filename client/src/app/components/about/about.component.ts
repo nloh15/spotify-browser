@@ -15,11 +15,13 @@ export class AboutComponent implements OnInit {
   constructor(private spotifyService:SpotifyService) {}
 
   ngOnInit() {
+
   }
 
   aboutMe():void{
     this.spotifyService.aboutMe().then((data)=>{
-      this.name = data.name;
+
+      this.name = data.name.split(" ")[0];
       this.profile_pic = data.imageURL;
       this.profile_link = data.spotifyProfile;
     });

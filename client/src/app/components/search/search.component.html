@@ -3,12 +3,12 @@
 <select [(ngModel)]="searchCategory">
 	<option *ngFor="let c of searchCategories" [ngValue]="c">{{ c }}</option>
 </select>
-<button class="btn btn-light" (click)="search()">Search</button>
-<!--TODO: Display a carousel component if searching for an artist or album. Bind carousel's resources and give it a static carouselId.-->
+<button class="btn btn-light btn-grad btn-search" (click)="search()">Search</button>
+<!-- Display a carousel component if searching for an artist or album. Bind carousel's resources and give it a static carouselId.-->
 <div *ngIf="searchCategory == 'artist' || searchCategory == 'album'">
 	<app-carousel *ngIf="searchCategory == 'artist' || searchCategory == 'album'" [carouselId]="searchCategory" [resources]="resources"></app-carousel>
 </div>
-<!--TODO: Display a track-list component if searching for a track. Bind track-list's tracks.-->
+<!-- Display a track-list component if searching for a track. Bind track-list's tracks.-->
 <div *ngIf="searchCategory == 'track'">
 	<app-track-list [tracks]="resources"></app-track-list>
 </div>
